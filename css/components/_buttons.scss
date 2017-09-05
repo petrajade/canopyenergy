@@ -1,0 +1,119 @@
+.btn {
+ color:white;
+ text-decoration:none;
+ position: relative;
+ top: -3px;
+ padding:8px 20px;
+ border-radius:3px;
+ font-family: $primary-text;
+ &:hover,
+ &:focus {
+   cursor: pointer;
+ }
+ @include smallMobileScreen2 {top: 0; padding: 5px 7.5px;};
+ @include mobileScreen2 {top: 0; padding: 5px 7.5px;};
+ @include xSmallScreen2 {top: 0; padding: 5px 7.5px;};
+ @include smallScreen2 {top: 0; padding: 5px 7.5px;};
+
+}
+
+
+.submitBtn {
+  @extend .btn;
+  padding: 8px 20px;
+  // border-radius: 3px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  @include smallMobileScreen2 {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  };
+  @include mobileScreen2 {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  };
+  @include xSmallScreen2 {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  };
+  @include smallScreen2 {
+    font-size: 0.8rem;
+    padding: 7px 18px;
+  };
+  // &:hover {
+  //   background:darken($gold,8%);
+  //   transition: all 0.3s ease;
+  // }
+}
+
+.btn-large {
+  position: relative;
+  color:white;
+  text-decoration:none;
+  top: 10px;
+  padding: 15px 40px;
+  border-radius:3px;
+  font-family: $quicksand;
+  font-size: 1rem;
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+  @include smallMobileScreen2 {
+    bottom: 0;
+    padding: 8px 24px;
+    font-size: 0.7em;
+  }
+  @include mobileScreen2 {
+    bottom: 0;
+    padding: 8px 24px;
+    font-size: 0.7em;
+  };
+  @include xSmallScreen2 {
+    bottom: 0;
+    padding: 8px 24px;
+    font-size: 0.7em;
+  };
+  @include smallScreen2 {
+    // top: 5px;
+    padding: 8px 24px;
+    font-size: 0.8em;
+  };
+  @include smallMedScreen2 {
+    // top: 5px;
+    padding: 9px 27px;
+    font-size: 0.8em;
+  };
+  @include medScreen2 {
+    padding: 10px 30px;
+    font-size: 1rem;
+  };
+  @include lgScreen2 {
+
+    padding: 10px 30px;
+    font-size: 1rem;
+  };
+  // border: 2px solid red;
+}
+
+.btn-gold {
+   @include button-bg($gold);
+}
+
+.btn-blue {
+   @include button-bg($blue);
+}
+
+.btn-darkGrey {
+   @include button-bg($darkGrey);
+}
+
+.btn-medGrey {
+   @include button-bg($mediumGrey);
+}
+
+.btn-ltGrey {
+   @include button-bg($lightGrey);
+}

@@ -1,0 +1,253 @@
+.jobLogoContainer {
+  position: fixed;
+  z-index: 5;
+  left: 3%;
+  width: 97%;
+  max-width: 1000px;
+  height: 90px;
+  background-color: white;
+
+  // border: 2px solid orange;
+}
+
+.jobLogo {
+  position: relative;
+  float: left;
+  left: -3%;
+  width: 50%;
+  height: 100%;
+  img {
+    @include vertical-align(absolute);
+    width: 300px;
+    height: auto;
+    // border: 2px solid blue;
+    }
+  // border: 2px solid green;
+}
+
+.applyContainer {
+  position: relative;
+  float: right;
+  right: 0%;
+  width: 40%;
+  height: 100%;
+  // border: 2px solid purple;
+}
+
+.btnContainer {
+  @include vertical-align(relative);
+  float: right;
+  right: 0;
+  // border: 2px solid pink;
+}
+
+.applyBtn {
+  @include vertical-align(relative);
+   color:white;
+   text-decoration:none;
+   top: 0;
+   padding:8px 20px;
+   border-radius:3px;
+   font-family: $primary-text;
+   font-weight: 700;
+   &:hover,
+   &:focus {
+     cursor: pointer;
+   }
+   @include smallScreen2 {top: 0; padding: 5px 7.5px;};
+   @include smallMobileScreen2 {top: 0; padding: 5px 7.5px;};
+   @include mobileScreen2 {top: 0; padding: 5px 7.5px;};
+   @include xSmallScreen2 {top: 0; padding: 5px 7.5px;};
+  }
+
+
+.emailContainer {
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  height: 100%;
+  // border: 2px solid yellow;
+  p {
+    @include vertical-align(relative);
+    font-weight: 500;
+  }
+}
+
+.jobContainer {
+  position: absolute;
+  top: 90px;
+  left: 3%;
+  width: 97%;
+  max-width: 1000px;
+  padding-bottom: 20px;
+}
+
+.jobTitleWrapper {
+  width: 100%;
+  margin-top: 1%;
+  color: $darkGrey;
+  font-family: $quicksand;
+  font-weight: 500;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.2em;};
+  @include smallMedScreen2 {font-size: 1.4em;};
+  @include medScreen2 {font-size: 1.4em;};
+  @include lgScreen2 {font-size: 1.6em;};
+  @include XLScreen2 {font-size: 1.6em;};
+  @include XXLScreen2 {font-size: 1.6em;};
+
+  // border: 2px solid black;
+}
+
+.jobLocation {
+  width: 100%;
+  // height: 10%;
+  margin-top: 1%;
+  color: $darkGrey;
+  font-family: $quicksand;
+  @include smallMobileScreen2 {font-size: 0.8em};
+  @include mobileScreen2 {font-size: 0.8em;};
+  @include xSmallScreen2 {font-size: 0.8em;};
+  @include smallScreen2 {font-size: 0.9em;};
+  @include smallMedScreen2 {font-size: 0.9em;};
+  @include medScreen2 {font-size: 0.9em;};
+  @include lgScreen2 {font-size: 1em;};
+  @include XLScreen2 {font-size: 1em;};
+  @include XXLScreen2 {font-size: 1em;};
+
+  // border: 2px solid yellow;
+}
+
+.emailText {
+  color: $mediumGrey;
+  font-family: $quicksand;
+  @include smallMobileScreen2 {font-size: 0.8em};
+  @include mobileScreen2 {font-size: 0.8em;};
+  @include xSmallScreen2 {font-size: 0.8em;};
+  @include smallScreen2 {font-size: 0.9em;};
+  @include smallMedScreen2 {font-size: 0.9em;};
+  @include medScreen2 {font-size: 0.9em;};
+  @include lgScreen2 {font-size: 1em;};
+  @include XLScreen2 {font-size: 1em;};
+  @include XXLScreen2 {font-size: 1em;};
+}
+
+.jobPageHeading {
+  width: 100%;
+  height: 10%;
+  margin-top: 2%;
+  color: $darkGrey;
+  font-family: $quicksand;
+  font-weight: 500;
+  @include smallMobileScreen2 {font-size: 0.8em};
+  @include mobileScreen2 {font-size: 0.8em;};
+  @include xSmallScreen2 {font-size: 0.8em;};
+  @include smallScreen2 {font-size: 1em;};
+  @include smallMedScreen2 {font-size: 1em;};
+  @include medScreen2 {font-size: 1em;};
+  @include lgScreen2 {font-size: 1.2em;};
+  @include XLScreen2 {font-size: 1.2em;};
+  @include XXLScreen2 {font-size: 1.2em;};
+
+  // border: 2px solid blue;
+}
+
+.jobPageSubHeading {
+  width: 100%;
+  height: 10%;
+  margin-top: 1%;
+  color: $darkGrey;
+  font-family: $quicksand;
+  font-weight: 500;
+  @include smallMobileScreen2 {font-size: 0.8em};
+  @include mobileScreen2 {font-size: 0.8em;};
+  @include xSmallScreen2 {font-size: 0.8em;};
+  @include smallScreen2 {font-size: 1em;};
+  @include smallMedScreen2 {font-size: 1em;};
+  @include medScreen2 {font-size: 1em;};
+  @include lgScreen2 {font-size: 1.2em;};
+  @include XLScreen2 {font-size: 1.2em;};
+  @include XXLScreen2 {font-size: 1.2em;};
+
+  // border: 2px solid grey;
+}
+
+.jobPageSubHeading2 {
+  width: 100%;
+  height: 10%;
+  margin-top: 1%;
+  color: $darkGrey;
+  font-family: $quicksand;
+  font-weight: 400;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.1em;};
+  @include lgScreen2 {font-size: 1.1em;};
+  @include XLScreen2 {font-size: 1.1em;};
+  @include XXLScreen2 {font-size: 1.1em;};
+
+  // border: 2px solid green;
+}
+
+.jobTextContainer {
+  width: 100%;
+  height: 50%;
+  margin-top: 1%;
+  p {
+    color: $mediumGrey;
+    font-family: $quicksand;
+    @include smallMobileScreen2 {font-size: 0.9em};
+    @include mobileScreen2 {font-size: 0.9em;};
+    @include xSmallScreen2 {font-size: 0.9em;};
+    @include smallScreen2 {font-size: 0.9em;};
+    @include smallMedScreen2 {font-size: 1.1em;};
+    @include medScreen2 {font-size: 1.1em;};
+    @include lgScreen2 {font-size: 1.1em;};
+    @include XLScreen2 {font-size: 1.1em;};
+    @include XXLScreen2 {font-size: 1.1em;};
+    // border: 2px solid pink;
+  }
+  // border: 2px solid green;
+}
+
+
+.jobList {
+  width: 95%;
+  // height: 20%;
+  margin-top: 5px;
+  margin-left: 5%;
+  list-style-type: circle;
+  color: $mediumGrey;
+  font-family: $quicksand;
+  @include smallMobileScreen2 {font-size: 0.9em};
+  @include mobileScreen2 {font-size: 0.9em;};
+  @include xSmallScreen2 {font-size: 0.9em;};
+  @include smallScreen2 {font-size: 0.9em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.1em;};
+  @include lgScreen2 {font-size: 1.1em;};
+  @include XLScreen2 {font-size: 1.1em;};
+  @include XXLScreen2 {font-size: 1.1em;};
+
+  // border: 2px solid purple;
+}
+
+
+
+
+
+// .applyContainer-5 {
+//   @include span-columns(5);
+//   position: relative;
+//   margin: 15px 0 50px 60px;
+// }
+//
+//
+// .jobTest {
+//   border: 1px solid blue;
+// }

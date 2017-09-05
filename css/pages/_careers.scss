@@ -1,0 +1,237 @@
+.careerPageContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  // @include mobileScreen {
+  //   margin-bottom: 100px;
+  // };
+  @include smallMobileScreen2 {
+    margin-bottom: 100px;
+  };
+  @include mobileScreen2 {
+    margin-bottom: 100px;
+  };
+  @include xSmallScreen2 {
+    margin-bottom: 100px;
+  };
+  overflow: hidden;
+  background-color: $white;
+  // border: 5px solid black;
+}
+
+.careersTopSection {
+  position: relative;
+  height: 300px;
+  @include smallMobileScreen2 {height: 200px;};
+  @include mobileScreen2 {height: 200px;};
+  @include xSmallScreen2 {height: 200px;};
+  @include smallScreen2 {height: 250px;};
+  @include smallMedScreen2 {height: 270px;};
+  @include medScreen2 {height: 270px;};
+  @include lgScreen2 {height: 300px;};
+  @include XLScreen2 {height: 330px;};
+  @include XXLScreen2 {height: 350px;}
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  // @include smallScreen2 {border-top: 3px solid blue;};
+  // @include smallMedScreen2 {border-top: 3px solid orange;};
+  // @include medScreen2 {border-top: 3px solid green;};
+  // @include lgScreen2 {border-top: 3px solid purple;};
+  // @include XLScreen2 {border-top: 3px solid pink;};
+  // @include XXLScreen2 {border-top: 3px solid black;};
+  // border: 1px solid orange;
+}
+
+.careerTopSectionTextBox {
+  position: absolute;
+  z-index: 5;
+  float: left;
+  left: 5vw;
+  width: 95vw;
+  height: 100%;
+  // border: 2px solid red;
+  @include smallScreen2 {
+    width: 75vw;
+  };
+  @include smallMobileScreen2 {
+    top: 15%;
+    width: 75vw;
+  };
+  @include mobileScreen2 {
+    top: 15%;
+    width: 75vw;
+  };
+  @include xSmallScreen2 {
+    top: 15%;
+    width: 75vw;
+  };
+}
+
+.careerTopTextSection1 {
+  position: absolute;
+  @include smallMobileScreen2 {top: 0px;};
+  @include mobileScreen2 {top: 0px;};
+  @include xSmallScreen2 {top: 0px;};
+  @include smallScreen2 {top: 70px;};
+  @include smallMedScreen2 {top: 75px;};
+  @include medScreen2 {top: 80px;};
+  @include lgScreen2 {top: 80px;};
+  @include XLScreen2 {top: 100px;};
+  @include XXLScreen2 {top: 110px;};
+  width: 100%;
+  // border: 1px solid purple;
+}
+
+.careerTopTextSection2 {
+  position: absolute;
+  bottom: 15px;
+  @include smallMobileScreen2 {top: 100px;};
+  @include mobileScreen2 {top: 100px;};
+  @include xSmallScreen2 {top: 100px;};
+  width: 100%;
+  // border: 1px solid purple;
+}
+
+.careerTopSectionImageBox {
+  position: absolute;
+  overflow: hidden;
+  float: right;
+  top: 0;
+  right: 0;
+  width: 25%;
+  @include smallMobileScreen2 {width: 40%; height: 260px;};
+  @include mobileScreen2 {width: 35%; height: 260px;};
+  @include xSmallScreen2 {width: 35%; height: 260px;};
+  @include smallScreen2 {height: 310px;};
+  @include smallMedScreen2 {height: 330px;};
+  @include medScreen2 {height: 330px;};
+  @include lgScreen2 {height: 360px;};
+  @include XLScreen2 {height: 390px;};
+  @include XXLScreen2 {height: 410px;}
+  // border: 3px solid green;
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 140%;
+    @include smallMobileScreen2 {right: -10%; height: 100%;};
+    @include mobileScreen2 {height: 100%;};
+    @include xSmallScreen2 {height: 100%;};
+    @include smallScreen2 {right: -10%; height: 105%;};
+    @include smallMedScreen2 {right: -15%; height: 120%;};
+    @include medScreen2 {right: -10%;};
+    @include lgScreen2 {right: -10%;};
+    // border: 1px solid blue;
+  }
+}
+
+
+.careerContainer {
+  position: relative;
+  width: 95%;
+  margin-left: 5%;
+  height: auto;
+  margin-top: 20px;
+  // border: 1px solid blue;
+}
+
+.careerHeading {
+  @extend .textHeadingMed;
+  margin: 0 0 30px 0px;
+  // border: 1px solid red;
+}
+
+.careerColumn {
+  @include span-columns(6, block-collapse);
+  position: relative;
+  margin: 0 0 0 0;
+  // border: 1px solid green;
+  @include smallMobileScreen2 {
+    @include span-columns(12, block-collapse);
+  };
+  @include mobileScreen2 {
+    @include span-columns(11, block-collapse);
+  };
+  @include xSmallScreen2 {
+    @include span-columns(11, block-collapse);
+  };
+}
+
+.jobTypeWrapper {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.careerSubHeading {
+  @extend .textSubHeading;
+  @extend .lightGrey-text;
+  margin: 0 80px 10px 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.positionListingWrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 0 80px 0 0px;
+  margin-bottom: 10px;
+  @include smallScreen2 {
+    width: 110%;
+  };
+  @include smallMobileScreen2 {
+    width: 110%;
+  };
+  @include mobileScreen2 {
+    width: 110%;
+  };
+  @include xSmallScreen2 {
+    width: 110%;
+  };
+  // border: 1px solid yellow;
+}
+
+.positionName {
+  @extend .textBodyLg3;
+  @extend .blue-text;
+  position: relative;
+  float: left;
+  font-weight: 500;
+  a {
+    @extend .blue-text;
+    text-decoration: none;
+    &:hover {
+      color: $darkBlue;
+    }
+  }
+}
+
+#noPosition {
+  @extend .textBodyLg3;
+  color: $whiteGrey;
+  font-weight: 400;
+}
+
+.positionLocation {
+  @extend .textBodyLg3;
+  @extend .lightGrey-text;
+  position: relative;
+  float: right;
+}
+
+.bottomPositionLocation {
+  @extend .positionLocation;
+  @include smallMobileScreen2 {
+    margin-right: -15px;
+  };
+  @include mobileScreen2 {
+    margin-right: -15px;
+  };
+  @include xSmallScreen2 {
+    margin-right: -15px;
+  };
+}

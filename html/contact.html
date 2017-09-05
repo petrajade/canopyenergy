@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<html>
+<body>
+
+  <div class="headerContainerV2 noBorder">
+    <div class="headerLogoV2">
+      <a href="index.html"><img src="../images/canopy_energy_logo_web.png" /></a>
+    </div>
+    <div class="headerLinksContainerV2">
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html" class="currentPage">Contact</a>
+      <a class="btn btn-gold href="contact.html"">Make Money</a>
+    </div>
+
+    <nav>
+    <div class="mobileMenu">
+      <a href="#" id="menuIcon">
+      </a>
+      <ul>
+        <li class="navList"><a href="index.html">Home</a></li>
+        <li class="navList"><a href="faq.html">FAQ</a></li>
+        <li class="navList"><a href="careers.html">Careers</a></li>
+        <li class="navList"><a href="contact.html" class="currentPage">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  </div>
+
+  <div class="contactBackground">
+
+  <div class="contactOuterContainer">
+
+
+    <div class="contactContainer-7">
+      <div class="contactHeading">
+        <p class="textHeadingLg2 gold-text">Contact us with any questions.</p>
+      </div>
+      <form name="contactForm" method="post" action="formDataNew.php" onsubmit="return validateForm();">
+        <input type="email" name="email" placeholder="YourEmail@gmail.com" required
+        oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="setCustomValidity('')" />
+        <br />
+        <textarea name="message" rows=15 required oninvalid="this.setCustomValidity('A message is required')" oninput="setCustomValidity('')" /></textarea>
+        <br />
+        <div class="submitBtnContainer">
+          <input type="submit" name="submit" value="Send Message" class="submitBtn btn-gold" id="inputBtn">
+          <!-- <a class="submitBtn btn-gold">Send Message</a> -->
+        </div>
+      </form>
+    </div>
+
+    <div class="contactContainer-4">
+      <div class="contactInfoBox">
+        <div class="contactInfoText">
+          <p class="textBody mediumGrey-text textSpace">6736 Vesper Avenue</p>
+          <p class="textBody mediumGrey-text textSpace">Van Nuys, CA 91405</p>
+          <br />
+          <p class="textBody mediumGrey-text textSpace">Tel: (424) 339-0005</p>
+          <p class="textBody mediumGrey-text textSpace">Fax: (424) 360-0801</p>
+          <br>
+          <p class="textBody mediumGrey-text textSpace boldText"><a class="blue-text" id="emailHover" href="mailto:info@canopyenergy.com?Subject=Website%20inquiry" target="_top">info@canopyenergy.com</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="caliImageContainer">
+      <img src="../images/cali_locations.jpg" />
+    </div>
+
+  </div>
+</div>
+
+    <div class="footerContainer">
+
+      <div class="footerColumn">
+        <div class="footerLinks">
+          <a href="privacy.html">Privacy Policy</a>
+          <a target="_blank" href="https://www.facebook.com/CanopyEnergySolar/">Facebook</a>
+          <a target="_blank" href="https://twitter.com/canopy_energy">Twitter</a>
+        </div>
+      </div>
+
+      <div class="footerColumn">
+        <div class="legalText">
+          <span class="textBody2">&copy; 2017 Canopy Energy.</span>
+          <span class="textBody2">All rights reserved.</span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="../js/formValidation.js"></script>
+
+
+</body>
+</html>

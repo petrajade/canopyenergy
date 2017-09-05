@@ -1,0 +1,130 @@
+.accordionWrapper {
+  position: relative;
+  left: 5vw;
+  width: 50%;
+  max-width: 1000px;
+  // border: 2px solid blue;
+}
+
+.accordion {
+  $base-border-color: $whiteGrey !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $mediumGrey;
+  $accordion-menu-border-color: $base-border-color;
+  $accordion-menu-color: $base-font-color;
+  // $accordion-menu-border: 1px solid $accordion-menu-border-color;
+  // $accordion-menu-background: lighten($accordion-menu-border-color, 10%);
+  $accordion-menu-hover: lighten($accordion-menu-border-color, 2%);
+  // $accordion-menu-sub-background: darken($accordion-menu-background, 5%);
+  // $accordion-menu-sub-inset: darken($accordion-menu-sub-background, 6%);
+  // $accordion-menu-sub-hover: lighten($accordion-menu-sub-background, 2%);
+  // $accordion-menu-list-padding: 30px 0 0 30px;
+  // $accordion-menu-list-padding: ($base-spacing / 2) $gutter;
+
+  background-color: $white;
+  margin: 0 0 $base-spacing 0;
+  padding: 0;
+  // font-family: $secondary-text;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    background-color: lighten($accordion-menu-border-color, 10%);
+    list-style: none;
+    border-radius: 6px;
+    a {
+       color: $accordion-menu-color;
+       display: block;
+       padding: 20px 30px;
+       text-decoration: none;
+
+       &.js-accordion-trigger {
+         margin-top: 10px;
+         font-family: $quicksand;
+         @include smallMobileScreen2 {font-size: 1.1em};
+         @include mobileScreen2 {font-size: 1.1em;};
+         @include xSmallScreen2 {font-size: 1.1em;};
+         @include smallScreen2 {font-size: 1.3em;};
+         @include smallMedScreen2 {font-size: 1.4em;};
+         @include medScreen2 {font-size: 1.5em;};
+         @include lgScreen2 {font-size: 1.6em;};
+         @include XLScreen2 {font-size: 1.6em;};
+         @include XXLScreen2 {font-size: 1.6em;};
+       }
+    }
+
+    p {
+      color: $white;
+      display: block;
+      padding: 5px 30px 30px 30px;
+      text-align: left;
+      font-family: $quicksand;
+      @include smallMobileScreen2 {font-size: 0.8em};
+      @include mobileScreen2 {font-size: 0.8em;};
+      @include xSmallScreen2 {font-size: 0.8em;};
+      @include smallScreen2 {font-size: 1em;};
+      @include smallMedScreen2 {font-size: 1em;};
+      @include medScreen2 {font-size: 1em;};
+      @include lgScreen2 {font-size: 1.2em;};
+      @include XLScreen2 {font-size: 1.2em;};
+      @include XXLScreen2 {font-size: 1.2em;};
+
+      a {
+        color: $accordion-menu-color;
+        display: inline;
+        padding: 0px;
+        text-decoration: none;
+      }
+    }
+
+    &:last-child {
+      border: 0;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $accordion-menu-hover;
+      color: $accordion-menu-color;
+    }
+  }
+
+  ul.submenu {
+    display: none;
+
+    li {
+      background-color: $blue;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+
+      &:first-child {
+      }
+
+      &:focus,
+      &:hover {
+
+      }
+    }
+  }
+
+  .is-expanded {
+    background-color: $blue;
+    display: block;
+    padding-bottom: 0;
+    a {
+      color: $white;
+      background-color: $blue;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+
+      &:hover {
+      color: $darkBlue;
+      }
+    }
+  }
+
+}

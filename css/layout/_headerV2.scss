@@ -1,0 +1,224 @@
+// VARIABLES
+
+$header-font:               $quicksand;
+$header-font-color:         $lightGrey;
+$header-hover-color:        $blue;
+$header-background-color:   rgba(255,255,255, 0.95);
+
+$logo-color: $blue;
+
+// SELECTORS
+
+.headerContainerV2 {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: $header-background-color;
+  border-bottom: 1px solid #E7E7E7;
+
+}
+
+.noBorder {
+    border-bottom: none;
+}
+
+.headerLogoV2 {
+  position: relative;
+  float: left;
+  top: 17px;
+  left: 15px;
+  img {
+    width: 300px;
+    height: auto;
+    }
+  @include smallMobileScreen2 {
+    top: 25px;
+    img {
+      width: 500px;
+      height: auto;
+    };
+  }
+  @include mobileScreen2 {
+    top: 25px;
+    img {
+      width: 500px;
+      height: auto;
+    };
+  };
+  @include xSmallScreen2 {
+    top: 25px;
+    img {
+      width: 200px;
+      height: auto;
+    };
+  };
+  @include smallScreen2 {
+    top: 32px;
+    img {
+      width: 200px;
+      height: auto;
+    };
+  };
+  // border: 1px solid pink;
+}
+
+.headerLinksContainerV2 {
+  position: relative;
+  float: right;
+  top: 40px;
+  right: 2rem;
+  text-align: right;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+  @include smallScreen2 {
+    top: 45px;
+    right: 1.5rem;
+  };
+  // border: 1px solid green;
+  a {
+    float: left;
+    margin-left: 2rem;
+    color: $header-font-color;
+    font-family: $header-font;
+    font-weight: 700;
+    font-size: 1rem;
+    // border: 1px solid red;
+    &:hover {
+      color: $header-hover-color;
+    }
+    &.btn {
+      margin-top: -6px;
+      color: $white;
+      // @include smallScreen {margin-top: -2px;}
+    }
+    &.currentPage {
+      color: $header-hover-color;
+    }
+    @include smallMobileScreen2 {display: none;};
+    @include mobileScreen2 {display: none;};
+    @include xSmallScreen2 {display: none;};
+    @include smallScreen2 {margin-left: 1.5rem; font-size: 0.8rem;};
+  }
+}
+
+nav {
+  position: relative;
+  float: right;
+  top: 30px;
+  right: 42px;
+  width: 30px;
+  height: 30px;
+  // @include smallMobileScreen2 {
+  //   position: relative;
+  //   float: right;
+  //   top: 30px;
+  //   right: 42px;
+  //   width: 30px;
+  //   height: 30px;
+  // };
+  // @include mobileScreen2 {
+  //   position: relative;
+  //   float: right;
+  //   top: 30px;
+  //   right: 42px;
+  //   width: 30px;
+  //   height: 30px;
+  // };
+  @include smallScreen2 {display: none;};
+  @include smallMedScreen2 {display: none;};
+  @include medScreen2 {display: none;};
+  @include lgScreen2 {display: none;};
+  @include XLScreen2 {display: none;};
+  @include XXLScreen2 {display: none;};
+}
+
+
+
+.mobileMenu {
+  @include smallMobileScreen2 {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: right;
+  };
+  @include mobileScreen2 {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: right;
+  };
+  @include xSmallScreen2 {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: right;
+  };
+}
+
+#menuIcon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../images/menuIconTransparent.png);
+  background-color: $blue;
+}
+
+a:hover#menuIcon {
+  background-color: $darkBlue;
+}
+
+nav ul, nav:active ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 400%;
+  padding: 0;
+  background: $white;
+  list-style: none;
+}
+
+nav li {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+  &:hover {
+    background-color: $whiteGrey;
+  }
+  a {
+      color: $header-font-color;
+      font-family: $header-font;
+      font-size: 0.9rem;
+      &:hover {
+        color: $header-hover-color;
+      }
+      &.btn {
+        margin-top: -10px;
+        color: $white;
+      }
+      &.currentPage {
+        color: $header-hover-color;
+      }
+  }
+}
+
+nav:hover ul {
+  display: block;
+}

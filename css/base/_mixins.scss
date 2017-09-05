@@ -1,0 +1,146 @@
+// RESPONSIVE MEDIA QUERIES
+
+@mixin mobileScreen {
+  @media screen and (max-width: 667px) {
+    @content;
+  }
+
+}
+@mixin smallScreen {
+  @media screen and (min-width: 668px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin medScreen {
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lgScreen {
+  @media screen and (min-width: 1201px) {
+    @content;
+  }
+}
+@mixin medLgScreen {
+  @media screen and (min-width: 1201px) and (max-width: 1340px) {
+    @content;
+  }
+}
+
+@mixin XLScreen {
+  @media screen and (min-width: 1341px) {
+    @content;
+  }
+}
+
+// MAIN PAGE TOP SECTION MEDIA QUERIES
+
+// @mixin smallMobileScreen2 {
+//   @media screen and (max-width: 550px) {
+//     @content;
+//   }
+//
+// }
+//
+// @mixin mobileScreen2 {
+//   @media screen and (min-width: 551px) and (max-width: 710px) {
+//     @content;
+//   }
+//
+// }
+
+@mixin smallMobileScreen2 {
+  @media screen and (max-device-width: 480px){
+    @content;
+  }
+
+}
+
+@mixin mobileScreen2 {
+  @media screen and (min-device-width: 481px) and (max-device-width: 1024px){
+    @content;
+  }
+
+}
+
+@mixin xSmallScreen2 {
+  @media screen and (max-width: 711px) {
+    @content;
+  }
+}
+
+@mixin smallScreen2 {
+  @media screen and (min-width: 711px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin smallMedScreen2 {
+  @media screen and (min-width: 901px) and (max-width: 1050px) {
+    @content;
+  }
+}
+
+@mixin medScreen2 {
+  @media screen and (min-width: 1051px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lgScreen2 {
+  @media screen and (min-width: 1201px) and (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin XLScreen2 {
+  @media screen and (min-width: 1501px) and (max-width: 1800px){
+    @content;
+  }
+}
+
+@mixin XXLScreen2 {
+  @media screen and (min-width: 1801px) {
+    @content;
+  }
+}
+
+
+// ARROW MEDIA QUERY
+
+@mixin arrowBreak {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+// BUTTON COLORS
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
+}
+
+// TEXT COLOR
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+// ALIGNMENT
+
+@mixin vertical-align($position) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

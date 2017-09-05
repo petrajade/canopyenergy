@@ -1,0 +1,100 @@
+.privacyContainer {
+  margin-top: 90px;
+  width: 100%;
+  min-height: 100vh;
+  // border: 3px solid purple;
+}
+
+.privacyTextContainer {
+  width: 90%;
+  height: 95%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+    // border: 3px solid red;
+}
+
+.privacySection {
+  padding: 10px 0;
+}
+
+.privacyHeading {
+  padding-bottom: 5px;
+  font-family: $primary-text;
+  font-weight: 500;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.2em;};
+  @include smallMedScreen2 {font-size: 1.3em;};
+  @include medScreen2 {font-size: 1.4em;};
+  @include lgScreen2 {font-size: 1.5em;};
+  @include XLScreen2 {font-size: 1.5em;};
+  @include XXLScreen2 {font-size: 1.5em;};
+    // border: 3px solid green;
+}
+
+.privacySubHeading {
+  padding-bottom: 5px;
+  font-family: $primary-text;
+  // font-weight: 500;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.1em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.2em;};
+  @include lgScreen2 {font-size: 1.2em;};
+  @include XLScreen2 {font-size: 1.2em;};
+  @include XXLScreen2 {font-size: 1.2em;};
+    // border: 3px solid black;
+}
+
+.privacyBodyText {
+  padding-bottom: 10px;
+  font-family: $garamond;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.1em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.2em;};
+  @include lgScreen2 {font-size: 1.2em;};
+  @include XLScreen2 {font-size: 1.2em;};
+  @include XXLScreen2 {font-size: 1.2em;};
+  a {
+    color: $blue;
+    font-family: $quicksand;
+    text-decoration: none;
+    &:hover {
+      color: $darkBlue;
+      font-weight: 500;
+    }
+  }
+  // border: 3px solid pink;
+}
+
+.privacyList {
+    width: 95%;
+    margin: 5px 0 10px 5%;
+    color: $mediumGrey;
+    font-family: $quicksand;
+    @include smallMobileScreen2 {font-size: 1em};
+    @include mobileScreen2 {font-size: 1em;};
+    @include xSmallScreen2 {font-size: 1em;};
+    @include smallScreen2 {font-size: 1.1em;};
+    @include smallMedScreen2 {font-size: 1.1em;};
+    @include medScreen2 {font-size: 1.2em;};
+    @include lgScreen2 {font-size: 1.2em;};
+    @include XLScreen2 {font-size: 1.2em;};
+    @include XXLScreen2 {font-size: 1.2em;};
+    a {
+      color: $blue;
+      font-family: $garamond;
+      text-decoration: none;
+      &:hover {
+        color: $darkBlue;
+        font-weight: 500;
+      }
+    }
+      // border: 3px solid blue;
+}

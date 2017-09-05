@@ -1,0 +1,166 @@
+.faqPageWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  @include mobileScreen {
+    margin-bottom: 100px;
+  };
+  overflow: hidden;
+  background-color: $white;
+  // border: 4px solid red;
+}
+
+.faqTopSection {
+  @include smallMobileScreen2 {height: 200px;};
+  @include mobileScreen2 {height: 200px;};
+  @include smallScreen2 {height: 250px;};
+  @include smallMedScreen2 {height: 270px;};
+  @include medScreen2 {height: 270px;};
+  @include lgScreen2 {height: 300px;};
+  @include XLScreen2 {height: 330px;};
+  @include XXLScreen2 {height: 350px;}
+  background-color: $white;
+  // border: 2px solid red;
+}
+
+.faqTopSectionContentWrapper {
+  position: relative;
+  display: inline-block;
+  // overflow: hidden;
+  left: 5vw;
+  width: 95vw;
+  height: 100%;
+  // border: 2px solid green;
+  // @include mobileScreen2 {min-width: 400px;};
+  // @include smallScreen2 {border-bottom: 3px solid blue;};
+  // @include smallMedScreen2 {border-bottom: 3px solid orange;};
+  // @include medScreen2 {border-bottom: 3px solid green;};
+  // @include lgScreen2 {border-bottom: 3px solid purple;};
+  // @include XLScreen2 {border-bottom: 3px solid pink;};
+  // @include XXLScreen2 {border-bottom: 3px solid black;};
+}
+
+
+.faqHeadingContainer {
+  position: absolute;
+  float: left;
+  left: 0;
+  height: 100%;
+  @include smallMobileScreen2 {width: 100%;};
+  @include mobileScreen2 {width: calc(100% - 280px);};
+  @include smallScreen2 {width: calc(100% - 300px);};
+  @include smallMedScreen2 {width: calc(100% - 365px);};
+  @include medScreen2 {width: calc(100% - 410px);};
+  @include lgScreen2 {width: calc(100% - 480px);};
+  @include XLScreen2 {width: calc(100% - 520px);};
+  @include XXLScreen2 {width: calc(100% - 560px);};
+  // border: 4px solid orange;
+}
+
+.faqHeadingSection {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+
+  @include smallMobileScreen2 {top: 50px;};
+  @include mobileScreen2 {top: 45px;};
+  @include smallScreen2 {top: 70px;};
+  @include smallMedScreen2 {top: 75px;};
+  @include medScreen2 {top: 80px;};
+  @include lgScreen2 {top: 80px;};
+  @include XLScreen2 {top: 100px;};
+  @include XXLScreen2 {top: 110px;};
+
+  // border: 1px solid red;
+}
+
+.faqSubHeadingSection {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+
+  // border: 1px solid green;
+}
+
+.faqTopSectionImg {
+  position: absolute;
+  float: right;
+  right: 0;
+  height: 170%;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {width: 240px;};
+  @include smallScreen2 {width: 260px;};
+  @include smallMedScreen2 {width: 325px;};
+  @include medScreen2 {width: 370px;};
+  @include lgScreen2 {width: 440px;};
+  @include XLScreen2 {width: 480px;};
+  @include XXLScreen2 {width: 520px;};
+    // border: 3px solid blue;
+  img {
+    position: absolute;
+    // z-index: 5;
+    right: 0;
+    top: 7%;
+    width: auto;
+    @include smallMobileScreen2 {right: -40%; height: 70%;};
+    @include mobileScreen2 {height: 220px;};
+    @include smallScreen2 {right: -10%; height: 75%;};
+    @include smallMedScreen2 {height: 85%;};
+    @include medScreen2 {height: 90%;};
+    @include lgScreen2 {height: 90%;};
+    @include XLScreen2 {height: 90%;};
+    @include XXLScreen2 {height: 90%;};
+      // border: 4px solid pink;
+  }
+}
+
+.faqContainer {
+  @extend .container;
+  position: relative;
+  z-index: 1;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  // border: 1px solid black;
+}
+
+.faqSubHeading {
+  @extend .lightGrey-text;
+  font-family: $primary-text;
+  margin: 5px 5vw;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.1em;};
+  @include smallMedScreen2 {font-size: 1.4em;};
+  @include medScreen2 {font-size: 1.5em;};
+  @include lgScreen2 {font-size: 1.6em;};
+  @include XLScreen2 {font-size: 1.6em;};
+  @include XXLScreen2 {font-size: 1.6em;};
+}
+
+// .faqText {
+//   font-family: $garamond;
+//   color: white;
+//   @include smallMobileScreen2 {font-size: 0.6em};
+//   @include mobileScreen2 {font-size: 0.7em;};
+//   @include smallScreen2 {font-size: 0.7em;};
+//   @include smallMedScreen2 {font-size: 0.9em;};
+//   @include medScreen2 {font-size: 0.9em;};
+//   @include lgScreen2 {font-size: 1.1em;};
+//   @include XLScreen2 {font-size: 1.1em;};
+//   @include XXLScreen2 {font-size: 1.1em;};
+// }
+
+.accordionIcon {
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+
+  // border: 1px solid blue;
+}

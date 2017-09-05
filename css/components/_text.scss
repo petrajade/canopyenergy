@@ -1,0 +1,257 @@
+// FONTS / COLORS
+
+$primary-text:          $quicksand;
+$secondary-text:        $quicksand;
+
+$secondary-text-size:   1em;
+
+// TEXT DECORATION AND SPACING
+a {
+  text-decoration: none;
+}
+
+.textLink {
+  padding: 0;
+  display: inline;
+}
+
+.textSpace {
+  padding-bottom: 3px;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+// TEXT SIZE - HEADERS
+
+.textHeading {
+  color:white;
+  font-family: $primary-text;
+  font-size: 2.5em;
+}
+
+.textHeadingLg {
+  @extend .textHeading;
+  font-size: 2.9em;
+}
+
+.textHeadingLg2 {
+  color:white;
+  font-family: $primary-text;
+  font-weight: 400;
+  @include smallMobileScreen2 {font-size: 1.3em};
+  @include mobileScreen2 {font-size: 1.3em;};
+  @include xSmallScreen2 {font-size: 1.3em;};
+  @include smallScreen2 {font-size: 1.6em;};
+  @include smallMedScreen2 {font-size: 1.8em;};
+  @include medScreen2 {font-size: 2em;};
+  @include lgScreen2 {font-size: 2.5em;};
+  @include XLScreen2 {font-size: 3em;};
+  @include XXLScreen2 {font-size: 3.2em;};
+}
+
+.textHeadingLg3 {
+  color:white;
+  font-family: $primary-text;
+  font-weight: 400;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.6em;};
+  @include smallMedScreen2 {font-size: 1.8em;};
+  @include medScreen2 {font-size: 2em;};
+  @include lgScreen2 {font-size: 2.5em;};
+  @include XLScreen2 {font-size: 3em;};
+  @include XXLScreen2 {font-size: 3.2em;};
+}
+
+.textHeadingMed {
+  color:white;
+  font-family: $primary-text;
+  @include smallMobileScreen2 {font-size: 1.2em};
+  @include mobileScreen2 {font-size: 1.2em;};
+  @include xSmallScreen2 {font-size: 1.2em;};
+  @include smallScreen2 {font-size: 1.4em;};
+  @include smallMedScreen2 {font-size: 1.8em;};
+  @include medScreen2 {font-size: 2em;};
+  @include lgScreen2 {font-size: 2.2em;};
+  @include XLScreen2 {font-size: 2.5em;};
+  @include XXLScreen2 {font-size: 2.5em;};
+}
+
+.textHeadingMed2 {
+  color:white;
+  font-family: $primary-text;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.1em;};
+  @include smallMedScreen2 {font-size: 1.4em;};
+  @include medScreen2 {font-size: 1.5em;};
+  @include lgScreen2 {font-size: 1.6em;};
+  @include XLScreen2 {font-size: 1.6em;};
+  @include XXLScreen2 {font-size: 1.6em;};
+}
+
+.textHeadingMed3 {
+  @extend .textHeading;
+  @include smallMobileScreen2 {font-size: 0.9em};
+  @include mobileScreen2 {font-size: 0.9em;};
+  @include xSmallScreen2 {font-size: 0.9em;};
+  @include smallScreen2 {font-size: 1.1em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.5em;};
+  @include lgScreen2 {font-size: 1.6em;};
+  @include XLScreen2 {font-size: 2em;};
+  @include XXLScreen2 {font-size: 2em;};
+}
+
+.textHeadingSmall {
+  @extend .textHeading;
+  @include smallMobileScreen2 {font-size: 1em};
+  @include mobileScreen2 {font-size: 1em;};
+  @include xSmallScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 1.2em;};
+  @include smallMedScreen2 {font-size: 1.2em;};
+  @include medScreen2 {font-size: 1.5em;};
+  @include lgScreen2 {font-size: 1.6em;};
+  @include XLScreen2 {font-size: 2em;};
+  @include XXLScreen2 {font-size: 2em;};
+}
+
+.textSubHeading {
+  color:white;
+  font-family: $secondary-text;
+  font-size: 1.5em;
+}
+
+.popupTitleText {
+  color: white;
+  font-family: $primary-text;
+  font-weight: 500;
+  text-align: center;
+  @include smallScreen2 {font-size: 0.7em;};
+  @include smallMedScreen2 {font-size: 0.9em;};
+  @include medScreen2 {font-size: 0.8em;};
+  @include lgScreen2 {font-size: 1em;};
+  @include XLScreen2 {font-size: 1.2em;};
+  @include XXLScreen2 {font-size: 1.3em;};
+}
+
+// TEXT SIZES - BODY
+
+.textBody {
+  color:white;
+  font-family: $secondary-text;
+  font-size: 0.8em;
+}
+
+.textBody2 {
+  color:white;
+  font-family: $secondary-text;
+  font-size: 0.8em;
+  font-weight: 500;
+  @media screen and (max-device-width: 910px) {
+    font-size: .7em;
+  }
+  @media screen and (max-width: 910px) {
+    font-size: .7em;
+  }
+}
+
+.textBodyXL {
+  @extend .textBody;
+  font-size: 1.3em;
+}
+
+.textBodyXL2 {
+  color:white;
+  font-family: $quicksand;
+  @include smallMobileScreen2 {font-size: 0.8em};
+  @include mobileScreen2 {font-size: 0.8em;};
+  @include xSmallScreen2 {font-size: 0.8em;};
+  @include smallScreen2 {font-size: 1em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.2em;};
+  @include lgScreen2 {font-size: 1.3em;};
+  @include XLScreen2 {font-size: 1.3em;};
+  @include XXLScreen2 {font-size: 1.3em;};
+}
+
+.textBodyLg {
+  @extend .textBody;
+  font-size: 1em;
+}
+
+.textBodyLg2 {
+  color:white;
+  font-family: $quicksand;
+  @include smallMobileScreen2 {font-size: 0.6em};
+  @include mobileScreen2 {font-size: 0.7em;};
+  @include xSmallScreen2 {font-size: 0.7em;};
+  @include smallScreen2 {font-size: 0.7em;};
+  @include smallMedScreen2 {font-size: 0.9em;};
+  @include medScreen2 {font-size: 0.9em;};
+  @include lgScreen2 {font-size: 1.1em;};
+  @include XLScreen2 {font-size: 1.1em;};
+  @include XXLScreen2 {font-size: 1.1em;};
+}
+
+.textBodyLg3 {
+  color:white;
+  font-family: $quicksand;
+  @include smallMobileScreen2 {font-size: 0.8em};
+  @include mobileScreen2 {font-size: 0.9em;};
+  @include xSmallScreen2 {font-size: 0.9em;};
+  @include smallScreen2 {font-size: 0.9em;};
+  @include smallMedScreen2 {font-size: 1.1em;};
+  @include medScreen2 {font-size: 1.1em;};
+  @include lgScreen2 {font-size: 1.2em;};
+  @include XLScreen2 {font-size: 1.2em;};
+  @include XXLScreen2 {font-size: 1.2em;};
+}
+
+.calloutTitleTextSize {
+  @include mobileScreen {font-size: 1.1em;};
+  @include smallScreen {font-size: 1.1em;};
+  @include medScreen {font-size: 1.1em;};
+  @include lgScreen {font-size: 1.1em};
+}
+
+.calloutTextSize {
+  @include mobileScreen {font-size: 0.7em;};
+  @include smallScreen {font-size: 0.7em;};
+  @include medScreen {font-size: 0.7em;};
+  @include lgScreen {font-size: 0.7em};
+}
+
+// TEXT COLORS
+
+.gold-text {
+  @include text-color($gold);
+}
+
+.green-text {
+  @include text-color($green);
+}
+
+.blue-text {
+  @include text-color($blue);
+}
+
+.lightGrey-text {
+  @include text-color($lightGrey);
+}
+
+.darkGrey-text {
+  @include text-color($darkGrey);
+}
+
+.whiteGrey-text {
+  @include text-color($whiteGrey);
+}
+
+.mediumGrey-text {
+  @include text-color($mediumGrey);
+}

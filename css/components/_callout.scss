@@ -1,0 +1,415 @@
+.calloutWrapper {
+  position: absolute;
+  top: 36%;
+  left: 14%;
+  width: 16%;
+  height: 50%;
+  // background-color: white;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.calloutWrapper2 {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 6%;
+  height: 50%;
+  // background-color: purple;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.calloutWrapper3 {
+  position: absolute;
+  top: 18%;
+  left: 75%;
+  width: 8.5%;
+  height: 50%;
+  // background-color: yellow;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.calloutWrapper4 {
+  position: absolute;
+  top: -9%;
+  left: 72%;
+  width: 7.5%;
+  height: 45%;
+  // background-color: grey;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.calloutWrapper5 {
+  position: absolute;
+  top: -7%;
+  left: 20%;
+  width: 11%;
+  height: 47%;
+  // background-color: pink;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.calloutWrapper6 {
+  position: absolute;
+  top: -2%;
+  left: 48%;
+  width: 9.5%;
+  height: 48%;
+  // background-color: orange;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.calloutWrapper7 {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  width: 4.5%;
+  height: 50%;
+  // background-color: red;
+  @include smallMobileScreen2 {display: none;};
+  @include mobileScreen2 {display: none;};
+  @include xSmallScreen2 {display: none;};
+}
+
+.popupWrapper {
+  position: absolute;
+  bottom: 6%;
+  left: 5%;
+  width: 90%;
+  height: 8%;
+  // border: 2px solid green;
+}
+
+#popupWrapper {
+  left: 3%;
+
+}
+
+.popup {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $blue;
+  // border-radius: 4px;
+  cursor: default;
+}
+
+
+.arrowWrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  // border: 2px solid #8B429F;
+}
+
+.arrowWrapper1 {
+  position: absolute;
+  bottom: 6%;
+  left: 1%;
+  width: 90%;
+  height: 8%;
+  // border: 2px solid #8B429F;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -8px;
+  border-color: transparent transparent transparent transparent;
+  border-width: 8px 8px 0px 8px;
+  @include arrowBreak {
+    margin-left: -5px;
+    border-width: 5px 5px 0px 5px;
+  };
+}
+
+.arrow1 {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 0;
+  margin-left: -10px;
+  border-color: transparent transparent transparent transparent;
+  border-width: 10px 10px 10px 10px;
+  @include arrowBreak {
+    margin-top: -7px;
+    margin-left: -5px;
+    border-width: 7px 7px 7px 7px;
+  };
+}
+
+.backSquare {
+  position: absolute;
+  z-index: 0;
+  top: -10px;
+  left: 50%;
+  width: 16px;
+  height: 10px;
+  margin-left: -8px;
+  background-color: $blue;
+  @include arrowBreak {
+    width: 10px;
+    margin-left: -5px;
+  };
+}
+
+.backSquare1 {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  margin-top: -10px;
+  left: 10px;
+  width: 6px;
+  height: 20px;
+  // margin-left: -1px;
+  background-color: $blue;
+  @include arrowBreak {
+    height: 12px;
+    margin-top: -6px;
+    margin-left: -2px;
+  };
+}
+
+.calloutWrapper .arrow1 {
+  position: absolute;
+  border-style: solid;
+  border-right-color: $blue;
+}
+
+.calloutWrapper2 .arrow {
+  position: absolute;
+  border-style: solid;
+  border-top-color: $blue;
+}
+
+.calloutWrapper3 .arrow {
+  position: absolute;
+  border-style: solid;
+  border-top-color: $blue;
+}
+
+.calloutWrapper4 .arrow {
+  position: absolute;
+  border-style: solid;
+  border-top-color: $blue;
+}
+
+.calloutWrapper5 .arrow {
+  position: absolute;
+  border-style: solid;
+  border-top-color: $blue;
+}
+
+.calloutWrapper6 .arrow {
+  position: absolute;
+  border-style: solid;
+  border-top-color: $blue;
+}
+
+.calloutWrapper7 .arrow {
+  position: absolute;
+  border-style: solid;
+  border-top-color: $blue;
+}
+
+.popupTitle {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  @extend .popupTitleText;
+  cursor: default;
+  // border: 1px solid green;
+  p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    // border: 1px solid purple;
+  }
+}
+
+.calloutContentWrapper {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  left: 10%;
+  bottom: 25%;
+  height: 330%;
+  cursor: default;
+  // border-radius: 4px;
+  // @include smallMobileScreen2 {border: 1px solid teal;};
+  // @include mobileScreen2 {border: 1px solid pink;};
+  // @include smallScreen2 {border: 1px solid orange;};
+  // @include smallMedScreen2 {border: 1px solid blue;};
+  // @include medScreen2 {border: 1px solid green;};
+  // @include lgScreen2 {border: 1px solid yellow;};
+  // @include XLScreen2 {border: 1px solid red;};
+  // @include XXLScreen2 {border: 1px solid purple;};
+}
+
+#calloutContentWrapper {
+  @include vertical-align(absolute);
+  width: 230%;
+}
+
+#calloutContentWrapper2 {
+  left: -260%;
+  width: 620%;
+  .calloutTextWrapper {
+    @include vertical-align(absolute);
+    height: 70%;
+  }
+}
+
+#calloutContentWrapper3 {
+  bottom: 0;
+  left: -150%;
+  width: 410%;
+  height: 380%;
+  .calloutTextWrapper {
+    @include vertical-align(absolute);
+    height: 80%;
+  }
+  .calloutText {
+    @include smallScreen2{z-index: 5; top: 25%; width: 103%;};
+    @include smallMedScreen2{z-index: 5; top: 30%; width: 103%;};
+  }
+}
+
+#calloutContentWrapper4 {
+  left: -200%;
+  width: 500%;
+  @include smallScreen2{width: 550%;};
+}
+
+#calloutContentWrapper5 {
+  left: -120%;
+  width: 340%;
+}
+
+#calloutContentWrapper6 {
+  bottom: 0%;
+  left: -150%;
+  width: 414%;
+  height: 380%;
+  .calloutTextWrapper {
+    @include vertical-align(absolute);
+    height: 70%;
+  }
+}
+
+#calloutContentWrapper7 {
+  left: -365%;
+  width: 850%;
+  @include smallScreen2{width: 850%;};
+  .calloutTextWrapper {
+    @include vertical-align(absolute);
+    height: 70%;
+  }
+}
+
+.calloutTextWrapper {
+  position: absolute;
+  float: left;
+  bottom: 5%;
+  height: 95%;
+  // border: 2px solid green;
+  @include smallMobileScreen2 {width: calc(100% - 75px);};
+  @include mobileScreen2 {width: calc(100% - 75px);};
+  @include smallScreen2 {width: calc(100% - 65px);};
+  @include smallMedScreen2 {width: calc(100% - 75px);};
+  @include medScreen2 {width: calc(100% - 75px);};
+  @include lgScreen2 {width: calc(100% - 95px);};
+  @include XLScreen2 {@include vertical-align(absolute); width: calc(100% - 110px); height: 70%;};
+  @include XXLScreen2 {@include vertical-align(absolute); width: calc(100% - 130px); height: 70%;};
+}
+
+.calloutTitle {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 90%;
+  height: 20%;
+  color: $blue;
+  font-family: $quicksand;
+  font-weight: 500;
+  // border: 2px solid pink;
+  @include smallMobileScreen2 {font-size: 1em;};
+  @include mobileScreen2 {font-size: 1em;};
+  @include smallScreen2 {font-size: 0.8em;};
+  @include smallMedScreen2 {font-size: 0.9em;};
+  @include medScreen2 {font-size: 1.1em;};
+  @include lgScreen2 {font-size: 1.1em;};
+  @include XLScreen2 {font-size: 1.4em;};
+  @include XXLScreen2 {font-size: 1.4em;};
+}
+
+.calloutText {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 95%;
+  height: 65%;
+  color: $lightGrey;
+  font-family: $quicksand;
+  // border: 2px solid red;
+  // @include smallMobileScreen2 {font-size: 0.6em;};
+  // @include mobileScreen2 {font-size: 0.6em;};
+  // @include smallScreen2 {z-index: 5; top: 30%; width: 105%; font-size: 0.6em;};
+  // @include smallMedScreen2 {font-size: 0.7em;};
+  // @include medScreen2 {font-size: 0.8em;};
+  // @include lgScreen2 {font-size: 0.85em;};
+  // @include XLScreen2 {font-size: 1em;};
+  // @include XXLScreen2 {font-size: 1em;};
+  @include smallMobileScreen2 {font-size: 0.6em};
+  @include mobileScreen2 {font-size: 0.7em;};
+  @include smallScreen2 {z-index: 5; top: 30%; width: 105%; font-size: 0.7em;};
+  @include smallMedScreen2 {font-size: 0.9em;};
+  @include medScreen2 {font-size: 0.9em;};
+  @include lgScreen2 {font-size: 1.1em;};
+  @include XLScreen2 {font-size: 1.1em;};
+  @include XXLScreen2 {font-size: 1.1em;};
+}
+
+.calloutDog {
+  position: absolute;
+  overflow: hidden;
+  float: right;
+  right: 0;
+  bottom: 1%;
+  height: 99%;
+  // border: 2px solid blue;
+  @include smallMobileScreen2 {width: 75px;};
+  @include mobileScreen2 {width: 75px;};
+  @include smallScreen2 {width: 65px;};
+  @include smallMedScreen2 {width: 75px;};
+  @include medScreen2 {width: 75px;};
+  @include lgScreen2 {width: 95px;};
+  @include XLScreen2 {width: 110px;};
+  @include XXLScreen2 {width: 130px;};
+  img {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+      // border: 2px solid blue;
+  }
+}
